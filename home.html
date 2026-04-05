@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaxing - Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./images/logo.png" alt="Jiaxing Logo" class="logo">
+            <div class="logo-text">Jiaxing - Jiangnan Water Town</div>
+            <div class="back-welcome"><a href="./index.html">&larr; Welcome</a></div>
+        </div>
+
+        <div class="nav">
+            <a href="./home.html" class="active">Home</a>
+            <a href="./nature.html">Nature</a>
+            <a href="./custom.html">Culture</a>
+            <a href="./food.html">Cuisine</a>
+            <a href="./spot.html">Attractions</a>
+        </div>
+
+        <div class="carousel" id="heroCarousel">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="./images/banner.png" alt="Jiaxing Banner">
+                    <div class="carousel-caption">
+                        <h2>Discover Jiaxing</h2>
+                        <p>A city where ancient water towns meet modern vitality in the heart of the Yangtze River Delta.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/s1.png" alt="Nanhu Lake">
+                    <div class="carousel-caption">
+                        <h2>Nanhu Scenic Area</h2>
+                        <p>Birthplace of the Red Boat Spirit &mdash; a sacred place in Chinese revolutionary history.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/j3.png" alt="Wuzhen">
+                    <div class="carousel-caption">
+                        <h2>Wuzhen Ancient Town</h2>
+                        <p>A living museum of Jiangnan water town culture with over 1,300 years of history.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/j1.png" alt="Xitang">
+                    <div class="carousel-caption">
+                        <h2>Xitang Water Town</h2>
+                        <p>Stroll through ancient corridors, stone bridges, and canal-side houses frozen in time.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <div class="main index-main">
+            <div class="intro-left">
+                <h2 class="subtitle">City Overview</h2>
+                <div class="card">
+                    <p>Jiaxing, also known as Hecheng, is located in northeastern Zhejiang Province, in the heart of the Yangtze River Delta's Hangjiahu Plain. As a vital city in the Yangtze River Delta urban agglomeration, it borders Shanghai to the east, Suzhou to the north, Hangzhou to the west, and the Hangzhou Bay to the south. With its unparalleled geographical advantages, Jiaxing has long been celebrated as the "Land of Fish and Rice" and the "Home of Silk."</p>
+                    <p style="margin-top:12px;">With a profound historical and cultural heritage, Jiaxing is recognized as a National Famous Historical and Cultural City. It is home to world-renowned water towns such as Xitang and Wuzhen, and holds a special place in Chinese history as one of the birthplaces of the Communist Party of China &mdash; the First National Congress concluded aboard the legendary Red Boat on Nanhu Lake in 1921, endowing the city with a unique revolutionary cultural identity.</p>
+                    <p style="margin-top:12px;">Jiaxing enjoys a subtropical monsoon climate with four distinct seasons &mdash; mild and humid throughout the year. The city is crisscrossed by a dense network of rivers and dotted with numerous lakes, creating a distinctive Jiangnan water town landscape. Covering a total area of 4,275.05 square kilometers with a population of approximately 5.5 million, Jiaxing administers 2 districts, 2 counties, and 3 county-level cities.</p>
+                </div>
+            </div>
+            <div class="intro-right">
+                <div class="img-group">
+                    <img src="./images/1.png" alt="Nanhu Lake">
+                    <img src="./images/2.png" alt="Wuzhen Water Town">
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="info-list">
+                <div class="info-item">
+                    <h3 class="subtitle">Birthplace of the CPC</h3>
+                    <p>The First National Congress of the Communist Party of China concluded aboard the legendary Red Boat on Nanhu Lake in 1921, making Jiaxing a sacred place in Chinese revolutionary history.</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="subtitle">World Internet Conference</h3>
+                    <p>Wuzhen serves as the permanent host of the World Internet Conference, connecting Jiaxing with the global digital community and showcasing China's technological advancement.</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="subtitle">Ancient Water Towns</h3>
+                    <p>Home to UNESCO-recognized water towns including Xitang and Wuzhen, Jiaxing preserves the most authentic Jiangnan water town architecture and lifestyle dating back centuries.</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="subtitle">Culinary Heritage</h3>
+                    <p>Renowned as the hometown of Chinese zongzi culture, Jiaxing's cuisine features delicate flavors rooted in Jiangnan traditions, from the iconic Jiaxing zongzi to Hangbai chrysanthemum tea.</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="subtitle">Geographical Advantage</h3>
+                    <p>Within 100 kilometers of Shanghai, Hangzhou, and Suzhou, serving as a crucial transportation hub and logistics center in the Yangtze River Delta.</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="subtitle">City Honors</h3>
+                    <p>China Excellent Tourism City, National Garden City, National Hygienic City, and National Civilized City &mdash; a harmonious blend of red culture, water town heritage, and folk traditions.</p>
+                </div>
+            </div>
+
+            <!-- Tab Section -->
+            <div class="tab-section">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="highlights">City Highlights</button>
+                    <button class="tab-btn" data-tab="culture">Cultural Heritage</button>
+                    <button class="tab-btn" data-tab="scenery">Natural Scenery</button>
+                    <button class="tab-btn" data-tab="cuisine">Famous Cuisine</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-panel active" id="tab-highlights">
+                        <div class="overview-images">
+                            <div class="overview-img">
+                                <img src="./images/s1.png" alt="Nanhu Revolution Memorial">
+                                <div class="overlay-text">Nanhu Scenic Area</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/j3.png" alt="Wuzhen Water Town">
+                                <div class="overlay-text">Wuzhen Ancient Town</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/s3.png" alt="South Lake">
+                                <div class="overlay-text">South Lake Red Boat</div>
+                            </div>
+                        </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9733;</div>
+                                <h4>National Famous City</h4>
+                                <p>Recognized as a National Famous Historical and Cultural City, Jiaxing boasts over 1,700 years of recorded history since the Qin Dynasty.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9830;</div>
+                                <h4>Birthplace of Revolution</h4>
+                                <p>The Red Boat on Nanhu Lake symbolizes the founding spirit of the Communist Party of China, making Jiaxing a sacred revolutionary site.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9827;</div>
+                                <h4>Digital Innovation Hub</h4>
+                                <p>Home to the permanent venue of the World Internet Conference, Jiaxing is at the forefront of China's digital transformation.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9824;</div>
+                                <h4>Golden Triangle Location</h4>
+                                <p>Perfectly positioned between Shanghai, Hangzhou, and Suzhou, Jiaxing enjoys unparalleled access to the Yangtze Delta's economic powerhouses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-culture">
+                        <div class="overview-images">
+                            <div class="overview-img">
+                                <img src="./images/s2.png" alt="Red Boat">
+                                <div class="overlay-text">Red Boat Spirit</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/j1.png" alt="Xitang">
+                                <div class="overlay-text">Xitang Water Town</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/j4.png" alt="Traditional Architecture">
+                                <div class="overlay-text">Jiangnan Architecture</div>
+                            </div>
+                        </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9733;</div>
+                                <h4>Red Boat Culture</h4>
+                                <p>In 1921, the First National Congress of the CPC concluded on Nanhu Lake, establishing the "Red Boat Spirit" &mdash; pioneering, striving, and dedication.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9830;</div>
+                                <h4>Water Town Heritage</h4>
+                                <p>Xitang and Wuzhen preserve the quintessential Jiangnan water town landscape, with ancient bridges, canal-side houses, and stone-paved alleys dating back to the Ming and Qing dynasties.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9827;</div>
+                                <h4>Silk & Weaving</h4>
+                                <p>Known as the "Home of Silk," Jiaxing has been a center of silk production for centuries, with traditional weaving techniques still practiced today.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9824;</div>
+                                <h4>South Mooncake Tradition</h4>
+                                <p>Jiaxing's South Mooncake (Nanyue) culture dates back to the Qing Dynasty, featuring exquisite craftsmanship and symbolic meanings of reunion and harvest.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-scenery">
+                        <div class="overview-images">
+                            <div class="overview-img">
+                                <img src="./images/1.png" alt="Nanhu Lake">
+                                <div class="overlay-text">Nanhu Lake</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/j5.png" alt="Gardens">
+                                <div class="overlay-text">Classical Gardens</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/j6.png" alt="Canals">
+                                <div class="overlay-text">Ancient Canals</div>
+                            </div>
+                        </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9733;</div>
+                                <h4>Nanhu Lake</h4>
+                                <p>The "Pearl of Jiangnan," Nanhu Lake features the iconic Mid-Lake Island, mist-covered waters, and the historic Smoke Rain Tower &mdash; one of China's most famous lake landscapes.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9830;</div>
+                                <h4>Haining Tide</h4>
+                                <p>The Qiantang River tidal bore in Haining, Jiaxing, is one of the world's most spectacular natural phenomena, drawing millions of visitors during the Mid-Autumn Festival.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9827;</div>
+                                <h4>Canal Network</h4>
+                                <p>The ancient Grand Canal flows through Jiaxing, creating a vast network of waterways that define the city's unique "Venice of the East" character.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9824;</div>
+                                <h4>Botanical Gardens</h4>
+                                <p>From the elegant South Lake Botanical Garden to the scenic North Ski Area, Jiaxing offers diverse natural experiences across all four seasons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-cuisine">
+                        <div class="overview-images">
+                            <div class="overview-img">
+                                <img src="./images/f1.png" alt="Zongzi">
+                                <div class="overlay-text">Jiaxing Zongzi</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/f2.png" alt="Local Dishes">
+                                <div class="overlay-text">Jiangnan Delicacies</div>
+                            </div>
+                            <div class="overview-img">
+                                <img src="./images/f3.png" alt="Tea">
+                                <div class="overlay-text">Hangbai Tea</div>
+                            </div>
+                        </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9733;</div>
+                                <h4>Jiaxing Zongzi</h4>
+                                <p>The iconic sticky rice dumpling wrapped in bamboo leaves, Jiaxing Zongzi is renowned nationwide. The Wufangzhai brand has been a household name for over a century.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9830;</div>
+                                <h4>Nanhu Lotus Wine</h4>
+                                <p>Brewed with local lotus flowers from Nanhu Lake, this traditional rice wine embodies the poetic elegance of Jiangnan's water town culture.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9827;</div>
+                                <h4>Hangbai Chrysanthemum Tea</h4>
+                                <p>Grown in the Haining region, Hangbai chrysanthemum is prized for its medicinal properties and delicate floral aroma, enjoyed as both tea and cuisine ingredient.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#9824;</div>
+                                <h4>South Lake Fish Dishes</h4>
+                                <p>Freshwater fish from Nanhu Lake are prepared in traditional Jiangnan styles &mdash; braised, steamed, or in soup &mdash; showcasing the region's aquatic bounty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            i25030604 @student.newinti.edu.my
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+                document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+                this.classList.add('active');
+                document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+            });
+        });
+
+        var currentSlide = 0;
+        var track = document.querySelector('.carousel-track');
+        var slides = document.querySelectorAll('.carousel-slide');
+        var totalSlides = slides.length;
+        var dotsContainer = document.getElementById('carouselDots');
+        var autoTimer;
+
+        for (var i = 0; i < totalSlides; i++) {
+            var dot = document.createElement('span');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.dataset.index = i;
+            dot.addEventListener('click', function() {
+                goToSlide(parseInt(this.dataset.index));
+            });
+            dotsContainer.appendChild(dot);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+            document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
+                d.classList.toggle('active', i === currentSlide);
+            });
+            resetTimer();
+        }
+
+        function moveCarousel(dir) {
+            goToSlide(currentSlide + dir);
+        }
+
+        function resetTimer() {
+            clearInterval(autoTimer);
+            autoTimer = setInterval(function() { goToSlide(currentSlide + 1); }, 5000);
+        }
+        resetTimer();
+    </script>
+
+</body>
+</html>
